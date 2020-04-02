@@ -1,0 +1,146 @@
+/* Global */
+body{   
+    background: #e5e5e5;
+    color: #252828;
+    font-family: 'Montserrat', sans-serif;
+
+    text-align: left;  
+    
+    margin: 0;
+}
+body.hideScroll{
+    overflow: hidden;
+}
+
+a {
+    color: #ff5EB4;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+.button{
+    color: white;
+    background: #ff5EB4;
+
+    width: 150px;
+    height: 40px;
+    border-radius: 8px;
+
+    box-shadow: 0px 8px 16px rgba(255, 0, 93, 0.315);
+
+    font-size: 14px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.button:hover{
+    text-decoration: none;
+    background-color: #0984e3;
+}
+
+/* Padrão*/
+p, .description{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+
+#container{
+    width: 80%; /* caso o width for menor que 980px  */
+    max-width: 980px;
+    margin: 40px auto;    
+
+    display: flex;
+}
+
+#intro{
+    width: 300px;
+    margin-right: 64px;
+}
+main{    
+    margin:  32px 0;
+}
+
+#buttons{
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-evenly;   
+
+}
+
+button{    
+    background: none;
+    color: #ff5EB4;
+
+    border: none;
+
+    font-size: 14px;
+    font-weight: bold;   
+    line-height: 18px;      
+    
+    letter-spacing: 0.2px;
+
+    cursor: pointer;
+    outline: none; 
+}
+button:hover{ 
+    text-decoration: underline;
+}
+
+footer{
+    text-align: center;
+    
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    
+
+    color: #777;
+    
+}
+
+.idea{
+    display: flex; 
+
+    background-color: #fff;  
+    box-shadow: 0 4px 16px -8px rgba(1, 1, 1, 0.1); 
+    border-radius:  8px;
+
+    margin-bottom: 32px;
+    padding: 32px;    
+}
+#page-index .principal{    
+    width: 80%;
+}
+
+.idea img{
+    width: 60px;
+    height: 60px;
+
+    margin-right: 32px;
+}
+.idea h3{
+    margin: 0;
+}
+
+.idea p{
+    margin: 8px 0;
+    color: #777;
+}
+.idea .description{
+    margin: 16px 0;    
+}
+#deletar img{
+    width: 15px;
+    width: 15px;
+}
+
