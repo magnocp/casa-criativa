@@ -39,7 +39,7 @@ const db = require("./db")
 server.use(express.static('public'))
 
 // habilitar uso do req.bory
-server.use(express.urlencoded({extended: true}))
+server.use(express.urlencoded({ extended: true }))
 
 //nunjucks
 const nunjucks = require("nunjucks")
@@ -68,7 +68,7 @@ server.get("/", function (req, res){
         return res.render("index.html", { ideas: lastIdeas })
         })
 })
-
+// lista
 server.get("/ideias", function (req, res){
 
     db.all(`SELECT * FROM ideas`, function (err, rows){
@@ -111,6 +111,20 @@ server.post("/", function(req, res){
         return res.redirect("/ideias")        
     })
     
+})
+// Delete
+server.get('/apagar/:id', function(req, res){
+    
+    const id = (req.params.id)     
+
+    db.run(`DELETE FROM ideas WHERE id = ? `, [id], function(err){
+        if (err){
+            console.log(err)
+            return res.send("Erro no banco de dados!")
+        }     
+    })   
+
+    return res.redirect("/")
 })
 
 
